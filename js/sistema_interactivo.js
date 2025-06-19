@@ -19,10 +19,10 @@ function Y_old(age) {
         history.go(0);
     }
     else if (age  < 18) {
-        alert(`Hola ${name}, eres menor de edad. ¡Sigue aprendiendo y disfrutando!`);
+        alert(`Hola ${"name"}, eres menor de edad. ¡Sigue aprendiendo y disfrutando!`);
     }
     else {
-        alert(`Hola ${name}, eres mayor de edad. ¡Preparate para grandes oportunidades en el mundo de la programacion!`);
+        alert(`Hola ${"name"}, eres mayor de edad. ¡Preparate para grandes oportunidades en el mundo de la programacion!`);
         window.location.href = "https://riwi.io/";
     }
 }
@@ -32,15 +32,13 @@ console.log("¡Binevenido al sistema interactivo de mensajes!");
 
 
 function login(event) {
-    event.preventDefault(); // Evita que el formulario se envíe de forma tradicional
+    event.preventDefault();
 
-    // Obtén los valores de los campos
     let name = document.getElementById("name").value;
     username(name)
     let age = document.getElementById("age").value;
     Y_old(age)
 
-    // Aquí puedes agregar lógica para validar los datos o enviarlos a un servidor
     console.log("Nombre ingresado:", name);
     console.log("Edad ingresada:", age);
 }
