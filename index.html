@@ -4,71 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="./img/code.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS practice</title>
 </head>
 
 <body>
     <main>
-        <p>
-            Java es un lenguaje de programación de propósito general, orientado a objetos, y una plataforma informática
-            creada por Sun Microsystems (actualmente propiedad de Oracle) en 1995. Es conocido por su portabilidad,
-            permitiendo a los desarrolladores escribir código una vez y ejecutarlo en diferentes sistemas operativos
-            gracias a la Máquina Virtual de Java (JVM). Java se utiliza para desarrollar una amplia gama de
-            aplicaciones, desde aplicaciones web y móviles hasta software empresarial y sistemas embebidos.
-            Características principales de Java:
-            <br>
-            Orientado a objetos:
-        <pre>
-    Java sigue el paradigma de la programación orientada a objetos, lo que facilita la organización y reutilización del código.
-    Portátil (WORA - Write Once, Run Anywhere):
-    La JVM permite que el código Java se ejecute en cualquier plataforma que tenga una JVM instalada, independientemente del sistema operativo subyacente.
-    Seguro:
-    Java ofrece características de seguridad que ayudan a proteger las aplicaciones de amenazas externas.
-    Robusto:
-    Java tiene mecanismos para manejar errores y excepciones de manera eficiente, lo que contribuye a la estabilidad de las aplicaciones.
-    Multihilo:
-    Java permite la ejecución simultánea de múltiples hilos de código, lo que facilita la creación de aplicaciones concurrentes.
-    Dinámico:
-    Java permite la carga dinámica de clases, lo que facilita la actualización de aplicaciones sin necesidad de detenerlas completamente.
-    Amplia biblioteca estándar:
-    Java cuenta con una gran cantidad de bibliotecas estándar que ofrecen funcionalidades comunes, como manejo de entrada/salida, redes y desarrollo de interfaces gráficas. 
-</pre>
+        <div class="form">
+            <form id="login" onsubmit="login(event)">
 
-        <br>
-        Usos comunes de Java:
-        <pre>
-    Aplicaciones web:
-    Java es ampliamente utilizado para desarrollar aplicaciones web complejas, tanto en el lado del cliente como del servidor. 
-</pre>
+    <h3>Nombre:</h3>
+    <input type="text" id="name" name="nombre">
 
-        Aplicaciones móviles:
-        <pre>
-    Java es el lenguaje principal para el desarrollo de aplicaciones Android. 
-    Software empresarial:
-    Java se utiliza para construir sistemas empresariales a gran escala, como sistemas de gestión de relaciones con clientes (CRM) y sistemas de planificación de recursos empresariales (ERP). 
-    Aplicaciones de escritorio:
-    Java puede utilizarse para crear aplicaciones de escritorio con interfaces gráficas de usuario (GUI). 
-    Big Data e Inteligencia Artificial:
-    Java es una opción popular para el procesamiento de grandes cantidades de datos y desarrollo de aplicaciones de inteligencia artificial. 
-    Sistemas embebidos:
-    Java se utiliza en dispositivos como tarjetas inteligentes y sistemas de control industrial.
-</pre>
-        <br>
-        Plataforma Java:
-        <br>
-        La plataforma Java consta de tres ediciones principales:
-        <pre>    Java SE (Standard Edition):
-    Proporciona la base para el desarrollo de aplicaciones Java en general, incluyendo aplicaciones de escritorio y algunas aplicaciones web.
-    Java EE (Enterprise Edition):
-    Amplía Java SE con funcionalidades adicionales para el desarrollo de aplicaciones empresariales a gran escala, como aplicaciones web complejas y servicios web.
-    Java ME (Micro Edition):
-    Está diseñada para dispositivos con recursos limitados, como dispositivos móviles y sistemas embebidos. 
-</pre>
-        </p>
+    <h3>Edad:</h3>
+    <input type="text" id="age" name="edad">
+    <hr>
+    <button type="submit" value="Enviar" id="Enviar">Log in</button>
+
+            </form>
+        </div>
     </main>
 
-    <script src="./sistema_interactivo.js"></script>
+    <script src="./js/sistema_interactivo.js"></script>
 </body>
 
 </html>
