@@ -1,96 +1,109 @@
+/* Estilos globales para todos los elementos */
 * {
-    left: 0;
-    top: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+    left: 0;                        /* Reinicia la posición izquierda (aunque no tiene mucho efecto sin position) */
+    top: 0;                         /* Igual que left, se ignora si no hay position */
+    margin: 0;                      /* Elimina márgenes por defecto */
+    box-sizing: border-box;        /* Hace que el padding y el borde se incluyan en el tamaño total */
+    font-family: sans-serif;       /* Establece una fuente sin serifas como predeterminada */
 }
 
+/* Estilo general del cuerpo del sitio */
 body {
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    background-color: #1e62de77;
-    display: flex;
+    overflow: hidden;              /* Evita desplazamiento (aunque puede cortar contenido en pantallas pequeñas) */
+    background-color: #1e62de77;   /* Azul claro con transparencia */
+    display: flex;                 /* Usa Flexbox para centrar contenido */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-content: center;
+    align-content: center;         /* No afecta mucho en `flex-direction: column` */
     padding: 15px;
 }
 
+/* Títulos y párrafos alineados al centro */
 h1, h2, p {
     text-align: center;
     padding: 10px;
 }
 
+/* Contenedor del formulario */
 .form {
     width: 500px;
     padding: 25px;
     display: flex;
     flex-direction: column;
-    align-items: center;   
-    justify-content: center;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px #0000001a;
+    align-items: center;           /* Centra horizontalmente el contenido dentro del form */
+    justify-content: center;       /* Centra verticalmente */
+    background-color: #fff;        /* Fondo blanco */
+    border-radius: 10px;           /* Bordes redondeados */
+    box-shadow: 0 2px 10px #0000001a; /* Sombra suave */
 }
 
+/* Estilos para los inputs */
 input {
     width: 100%;
     padding: 15px;
     border: 1px solid #8e8e8e;
-    border-radius: 50px;
-}
-input:focus {
-    outline: none;
-    border-color: #570be4;
-    transition-duration: 0.3s;
+    border-radius: 50px;           /* Bordes completamente redondeados (tipo píldora) */
 }
 
+/* Efecto cuando el input está enfocado */
+input:focus {
+    outline: none;
+    border-color: #570be4;         /* Color morado al enfocar */
+    transition-duration: 0.3s;     /* Transición suave */
+}
+
+/* Estilos generales del botón */
 button {
     width: 100%;
-    background-color: #570be4;
+    background-color: #570be4;     /* Fondo morado */
     color: #fff;
-    border-radius: 50px;
+    border-radius: 50px;           /* Bordes tipo píldora */
     border: none;
     padding: 25px;
 }
+
+/* Cambios cuando se pasa el mouse sobre el botón */
 button:hover {
-    background-color: #af97ce;
+    background-color: #af97ce;     /* Color más claro al pasar el mouse */
     transition-duration: 0.3s;
     color: #000000;
 }
+
+/* Restablece estilo cuando no está en hover */
 button:not(:hover) {
-        background-color: #570be4;
-        color: #fff;
-        transition-duration: 0.3s;
-    }
+    background-color: #570be4;
+    color: #fff;
+    transition-duration: 0.3s;
+}
 
-
-
+/* Pie de página */
 footer {
     background-color: rgb(43, 41, 41);
     background-size: cover;
     text-align: center;
-    opacity: 50%;
+    opacity: 50%;                  /* Semi-transparente */
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+
+    /* Estilos específicos para los <p> dentro del footer */
     p {
-    color: white;
-    font-size: 1em;
-    text-shadow: 2px 2px 4px #000000;
-}
+        color: white;
+        font-size: 1em;
+        text-shadow: 2px 2px 4px #000000; /* Sombra para mejor contraste */
+    }
 }
 
-
+/* Media query para pantallas pequeñas (celulares) */
 @media screen and (max-width: 600px) {
     .form {
-        padding: 100px;
+        padding: 100px;            /* Aumenta el padding en móviles (puede ser mucho) */
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 1.5em;          /* Reduce el tamaño del título */
     }
 
     button {
@@ -103,6 +116,7 @@ footer {
     }
 }
 
+/* Media query para pantallas medianas (tablets) */
 @media screen and (min-width: 601px) and (max-width: 900px) {
     .form {
         width: 100%;

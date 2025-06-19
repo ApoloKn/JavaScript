@@ -1,7 +1,12 @@
 <!DOCTYPE html>
+<!-- Define el tipo de documento como HTML5 -->
+
 <html lang="en">
+<!-- Comienza el documento HTML con el idioma en inglés -->
 
 <head>
+    <!-- Información meta y recursos para el navegador -->
+
     <meta charset="UTF-8">
     <meta name="description" content="pagina de ejercicio javascript">
     <meta name="keywords" content="iniciando, javascript, html, css, ejercicio, practica">
@@ -11,41 +16,60 @@
     <meta name="revisit-after" content="15days">
     <meta name="theme-color" content="#6799d6">
     <link rel="shortcut icon" href="./img/code.png" type="image/x-icon">
+    <!-- Icono que aparece en la pestaña del navegador -->
     <link rel="stylesheet" href="./css/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la escala de la página para dispositivos móviles -->
     <title>JS practice</title>
+    <!-- Título de la pestaña del navegador -->
 </head>
 
 <body>
+    <!-- Cuerpo del documento, contenido visible -->
+
     <header>
+        <!-- Encabezado principal del sitio -->
         <h1>JS practice</h1>
         <h2>Login</h2>
         <p>Enter your name and age to log in.</p>
     </header>
-    <main>
-        <div class="form">
-            <form id="login" onsubmit="login(event)">
-                <pre>
-<h3>Nombre:</h3>
-<input type="text" id="name" name="nombre">
 
-<h3>Edad:</h3>
+    <main>
+        <!-- Sección principal del contenido -->
+        <div class="form">
+            <!-- Contenedor del formulario -->
+
+            <form id="login" onsubmit="login(event)">
+                <!-- Formulario con ID y evento onsubmit que llama a la función login -->
+                <pre>
+<!-- Etiquetas <pre> conservan los espacios y saltos de línea como se escriben -->
+
+<h3>Name:</h3>
+<input type="text" id="name" name="nombre">
+<!-- Campo de texto para el nombre -->
+
+<h3>Age:</h3>
 <input type="text" id="age" name="edad">
+<!-- Campo de texto para la edad -->
                 
 -----------------------------------------------------------
-                
+<!-- Separador visual -->
+
 <button type="submit" value="Enviar" id="Enviar">Log in</button>
+<!-- Botón para enviar el formulario -->
                 </pre>
             </form>
         </div>
     </main>
 
     <footer>
+        <!-- Pie de página del sitio -->
         <p>Derechos reservados &copy; 2025</p>
         <p>Diseñado por Jainer Polo</p>
     </footer>
 
     <script src="./js/sistema_interactivo.js"></script>
+    <!-- Enlace al archivo JavaScript que maneja la interactividad -->
 </body>
 
 </html>
