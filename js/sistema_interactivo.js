@@ -6,8 +6,8 @@ function username(name) {
     }
 }
 
-function Y_old(age) {
-    
+function Y_old(name, age) {
+    name = name
     age = parseInt(age);
     if (isNaN(age)) {
         console.error("Error: Ingrese una edad valida en numeros, por favor");
@@ -19,10 +19,10 @@ function Y_old(age) {
         history.go(0);
     }
     else if (age  < 18) {
-        alert(`Hola ${"name"}, eres menor de edad. ¡Sigue aprendiendo y disfrutando!`);
+        alert(`Hola ${name}, eres menor de edad. ¡Sigue aprendiendo y disfrutando!`);
     }
     else {
-        alert(`Hola ${"name"}, eres mayor de edad. ¡Preparate para grandes oportunidades en el mundo de la programacion!`);
+        alert(`Hola ${name}, eres mayor de edad. ¡Preparate para grandes oportunidades en el mundo de la programacion!`);
         window.location.href = "https://riwi.io/";
     }
 }
@@ -37,7 +37,7 @@ function login(event) {
     let name = document.getElementById("name").value;
     username(name)
     let age = document.getElementById("age").value;
-    Y_old(age)
+    Y_old(name, age)
 
     console.log("Nombre ingresado:", name);
     console.log("Edad ingresada:", age);
