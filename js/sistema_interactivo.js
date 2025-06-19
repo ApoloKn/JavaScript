@@ -14,15 +14,16 @@ function Y_old(age) {
         alert("Error: Ingrese una edad valida en numeros, por favor")
         history.go(0);
     }
-    else if (age < 18) {
-        alert(`Hola ${name}, eres menor de edad. ¡Sigue aprendiendo y disfrutando!`);
-    }
-    else if (age <0) {
-        alert("Error: no puedes tener edades negativas")
+    else if (age < 0) {
+        alert("Error: no puedes tener esta edad")
         history.go(0);
+    }
+    else if (age  < 18) {
+        alert(`Hola ${name}, eres menor de edad. ¡Sigue aprendiendo y disfrutando!`);
     }
     else {
         alert(`Hola ${name}, eres mayor de edad. ¡Preparate para grandes oportunidades en el mundo de la programacion!`);
+        window.location.href = "https://riwi.io/";
     }
 }
 
